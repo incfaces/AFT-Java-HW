@@ -3,6 +3,7 @@ package HW1;
 import java.util.Scanner;
 
 /**
+ * Created by Me on 02.12.2017.
  */
 public class Task2 {
 
