@@ -1,4 +1,4 @@
-package HW1;
+package Week1.HW1;
 
 import java.util.Scanner;
 
@@ -15,9 +15,11 @@ public class Task2 {
      */
     public static double divide(double a, double b) {
         double c;
-        c = Math.round((a / b) * 10000) / 10000.0d;
-        System.out.println("Результат равен = " + c);
-        return 0;
+        //c = Math.round((a / b) * 10000) / 10000.0d;
+        //System.out.println("Результат равен = " + c);
+        c = a / b;
+        System.out.printf("%.2f + %.2f = %.4f", a, b, c);
+        return c;
     }
     /**
      * Функция сложения
@@ -27,9 +29,9 @@ public class Task2 {
      */
     public static double summ(double a, double b) {
         double c;
-        c = Math.round((a + b) * 10000) / 10000.0d;
-        System.out.println("Результат равен = " + c);
-        return 0;
+        c = a + b;
+        System.out.printf("%.2f + %.2f = %.4f", a, b, c);
+        return c;
     }
     /**
      * Функция вычитания
@@ -39,9 +41,9 @@ public class Task2 {
      */
     public static double substr(double a, double b) {
         double c;
-        c = Math.round((a - b) * 10000) / 10000.0d;
-        System.out.println("Результат равен = " + c);
-        return 0;
+        c = a - b;
+        System.out.printf("%.2f - %.2f = %.4f", a, b, c);
+        return c;
     }
     /**
      * Функция умножения
@@ -51,9 +53,9 @@ public class Task2 {
      */
     public static double mult(double a, double b) {
         double c;
-        c = Math.round((a * b) * 10000) / 10000.0d;
-        System.out.println("Результат равен = " + c);
-        return 0;
+        c = a * b;
+        System.out.printf("%.2f * %.2f = %.4f", a, b, c);
+        return c;
     }
 
     public static void main(String[] args) {
