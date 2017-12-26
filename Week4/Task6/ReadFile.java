@@ -18,7 +18,7 @@ public class ReadFile {
 
         //Прочитать слова из файла.
 
-        Scanner in = new Scanner(new File("C:/Java/File.txt"));
+        Scanner in = new Scanner(new File("src/main/java/Week4/Task6/File.txt"));
         String string = in.nextLine();
         String[] words = string.split("\\s+");
         HashMap<String, Integer> wordToCount = new HashMap<String, Integer>();
@@ -51,7 +51,7 @@ public class ReadFile {
         }
         System.out.println("Слово с максимальным количеством повторений = количество повторений:");
         System.out.println(maxEntry);
-        System.out.println(3/0);
+
 
     }
 }
