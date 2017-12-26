@@ -43,12 +43,19 @@ class Calculator {
 
             System.out.println("Введите второе число:");
             double arg2 = in.nextDouble();
+            try {
+                System.out.print("Результат равен:\t");
+                Operation op = myOperation.getOpInstance(operation);
+                if (op != null)System.out.println(op.exec(arg1, arg2));
+                else System.out.println("Недопустимая операция!!!");
+            } catch(IllegalArgumentException  e) {
+                System.out.println("Catch inside main : " + e.getMessage());
+            }
+            //System.out.print("Результат равен:\t");
+            //Operation op = myOperation.getOpInstance(operation);
 
-            System.out.print("Результат равен:\t");
-            Operation op = myOperation.getOpInstance(operation);
-
-            if (op != null)System.out.println(op.exec(arg1, arg2));
-            else System.out.println("Недопустимая операция!!!");
+            //if (op != null)System.out.println(op.exec(arg1, arg2));
+            //else System.out.println("Недопустимая операция!!!");
 
             System.out.println("Продолжить...?");
             System.out.print("1 - Продолжить;\t");
